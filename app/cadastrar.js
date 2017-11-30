@@ -13,12 +13,7 @@ const addObject = (connection, req) => {
             })
         })
 }
-    
+
 module.exports = {
-    addObject
-        // getAlunos,
-        // confereAluno,
-        // addAluno,
-        // getAlunosLike
-    
+    addObject 
 }

@@ -1,14 +1,14 @@
-const statusDB = require('../db/trafficTicketsDB.json')
-
+const getObject = (connection, req) => {
+    return new Promise((resolve, reject) => {
+        connection.query("SELECT * FROM controle", (err,result) => {
+            if(err){
+                reject(err)
+            }else{
+                resolve(result)
+            }
+        })
+    })
+}
 module.exports = {
-    getStatus (placa) {
-        let status = statusDB.find(status => status.vehiclePlate == placa)
-        if (status) {
-            vehiclePlate = placa.vehiclePlate
-            violation = placa.violation
-            points = placa.points
-            value = placa.value
-        }
-        return status
-    }
+    getObject
 }
