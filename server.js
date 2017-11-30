@@ -58,6 +58,8 @@ app.get('/delete', (request, response) => {
     response.render('delete', data)
 })
 
+app.post('/cadastrar/alunos', addController.addAluno.bind(null, connection))
+
 connection.connect(err => {
     if (err) {
         console.log('Error to connect to database ' + err)
