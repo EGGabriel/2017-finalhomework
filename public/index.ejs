@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="css/960.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Final Homework</title>
 </head>
+
 <body>
-    <h1>Teste</h1>
+    <div class="container_12">
+        <div class="container_2 prefix_4 sufix_6">
+            <h1>Final Homework</h1>
+        </div>
+        <div class="container_3 prefix_5">
+                <form action="/cadastrar" method="get">
+                    <input class="form" type="submit" name="cadastrar" value="Cadastrar">
+                </form>                
+                <form action="/consult" method="get">
+                    <input class="form" type="submit" name="consultar" value="Consultar">
+                </form>                
+                <form action="/edit" method="get">
+                    <input class="form" type="submit" name="editar" value="Editar">
+                </form>                
+                <form action="/delete" method="get">
+                    <input class="form" type="submit" name="deletar" value="Deletar">
+                </form>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -2,3 +2,29 @@ body {
     background: #eee;
     font-family: 'Trebuchet MS', Arial;
 }
+
+.form {
+    width: 24.5%;
+    padding: 12px 20px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}   

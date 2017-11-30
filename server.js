@@ -19,15 +19,43 @@ const preference = {
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: true, parameterLimit: 1000000  }))
 app.use(express.static('public'))
-
 app.set('views', path.join(__dirname, 'public'))
 app.set('view engine', 'ejs')
 
 
 app.get('/', (request, response) => {
-    const data = {
+    const data = { 
+        control:null,
         submitted:false }
     response.render('index', data)
+})
+
+app.get('/cadastrar', (request, response) => {
+    const data = { 
+        control:null,
+        submitted:false }
+    response.render('cadastrar', data)
+})
+
+app.get('/consult', (request, response) => {
+    const data = { 
+        control:null,
+        submitted:false }
+    response.render('consultar', data)
+})
+
+app.get('/edit', (request, response) => {
+    const data = { 
+        control:null,
+        submitted:false }
+    response.render('editar', data)
+})
+
+app.get('/delete', (request, response) => {
+    const data = { 
+        control:null,
+        submitted:false }
+    response.render('delete', data)
 })
 
 connection.connect(err => {
